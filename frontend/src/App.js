@@ -18,8 +18,13 @@ function App() {
       ) : (
         <ul>
           {jobs.map((job) => (
-            <li key={job.id}>
-              <strong>{job.position}</strong> at {job.company}
+            <li key={job.id} style={{ border: "1px solid #ccc", marginBottom: "10px", padding: "10px", listStyleType: "none" }}>
+              <h3><strong>{job.position}</strong> at {job.company}</h3>
+              <p><strong>Applied Date:</strong> {job.appliedDate ? new Date(job.appliedDate).toLocaleDateString() : 'N/A'}</p>
+              <p><strong>Status:</strong> {job.status || 'N/A'}</p>
+              <p><strong>CV Reference:</strong> {job.cvReference || 'N/A'}</p>
+              <p><strong>User Requirements:</strong> {job.userRequirements || 'N/A'}</p>
+              <p><strong>Notes:</strong> {job.notes || 'N/A'}</p>
             </li>
           ))}
         </ul>

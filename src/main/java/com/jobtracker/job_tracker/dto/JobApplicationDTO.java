@@ -11,6 +11,8 @@ public class JobApplicationDTO {
     private String status;
     private LocalDate appliedDate;
     private String notes;
+    private String cvReference;
+    private String userRequirements;
 }
 
 

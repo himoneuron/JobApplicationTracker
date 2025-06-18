@@ -22,6 +22,8 @@ public class JobApplicationServiceImpl implements JobApplicationService{
                 .status(dto.getStatus())
                 .appliedDate(dto.getAppliedDate())
                 .notes(dto.getNotes())
+                .cvReference(dto.getCvReference())
+                .userRequirements(dto.getUserRequirements())
                 .build();
         return repository.save(job);
     }
