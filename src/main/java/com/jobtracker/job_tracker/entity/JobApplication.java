@@ -33,5 +33,9 @@ public class JobApplication {
 
     private String notes;
 
+    private String cvReference;
+
+    private String userRequirements;
+
 
 }
